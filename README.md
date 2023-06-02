@@ -44,24 +44,43 @@ To add your code files from the "codes" folder on your desktop to your GitHub re
 After executing these steps, your code files from the "codes" folder on your desktop will be added to your GitHub repository named "github-repo-instructions."
 
 
-Incase, you have already added the files, and you want to add the new files that you created in the same project folder, and wants to add to the same repo, here are the instructions for it too :
+If you have already added the files to the Git repository using the `git add` command, you can proceed to commit and push those changes to the remote repository using the following commands:
 
-Add the files to the Git repository:
+1. Commit the changes:
+   ```
+   git commit -m "Your commit message"
+   ```
 
-csharp
-Copy code
-git add .
-This command adds all the changes in the current directory to the staging area.
+   The `-m` option is used to provide a commit message that describes the changes you made.
 
-Commit the changes:
+2. Push the changes to the remote repository:
+   ```
+   git push origin <branch-name>
+   ```
 
-sql
-Copy code
-git commit -m "Added new feature"
-This creates a new commit with the specified message.
+   Replace `<branch-name>` with the name of the branch you want to push the changes to. Typically, the default branch is `master` or `main`.
 
-Push the changes to the remote repository:
+Here's an example workflow:
 
-perl
-Copy code
-git push origin master
+1. Add the files to the Git repository:
+   ```
+   git add .
+   ```
+
+   This command adds all the changes in the current directory to the staging area.
+
+2. Commit the changes:
+   ```
+   git commit -m "Added new feature"
+   ```
+
+   This creates a new commit with the specified message.
+
+3. Push the changes to the remote repository:
+   ```
+   git push origin master
+   ```
+
+   This command pushes the committed changes to the `master` branch of the remote repository.
+
+Note: If you haven't previously set up the remote repository or configured the upstream branch, you may need to use additional commands to set those up. Let me know if you need assistance with that as well.
