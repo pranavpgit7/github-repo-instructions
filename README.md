@@ -42,3 +42,26 @@ To add your code files from the "codes" folder on your desktop to your GitHub re
    Note: If you already have files in the repository and you are pushing for the first time, you might need to use `git push -u origin master` instead of `main`.
 
 After executing these steps, your code files from the "codes" folder on your desktop will be added to your GitHub repository named "github-repo-instructions."
+
+
+Incase, you have already added the files, and you want to add the new files that you created in the same project folder, and wants to add to the same repo, here are the instructions for it too :
+
+Add the files to the Git repository:
+
+csharp
+Copy code
+git add .
+This command adds all the changes in the current directory to the staging area.
+
+Commit the changes:
+
+sql
+Copy code
+git commit -m "Added new feature"
+This creates a new commit with the specified message.
+
+Push the changes to the remote repository:
+
+perl
+Copy code
+git push origin master
